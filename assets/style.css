@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+.inner_content {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header_contents {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 94px;
+  height: 18px;
+}
+
+#nav {
+  display: flex;
+  width: 625px;
+  justify-content: space-between;
+}
+#nav div {
+  cursor: pointer;
+}
+/* CSS Pre-Processor : 
+
+브라우저는 html, css , js 밖에 읽지 못하는데
+아래것들은 브라우가 읽을 수 있게 webpack 같은거로 변환해줘야함.
+
+  1. scss
+  2. less
+  ....
+
+  => 설치해서 사용해야함
+
+일반적인 css 는 태그나 클래스 뒤에 :hover */
+#nav div:hover {
+  color: rgb(120, 3, 120);
+}
+#header_icon {
+  display: flex;
+  width: 196px;
+  justify-content: space-between;
+}
+
+#header_icon div {
+  cursor: pointer;
+}
+
+/* > 꺽새는 부모의 바로 밑에 자식만 선택됨 */
+/* .selector ul {
+  background-color: rgb(120, 3, 120);
+} */
+
+.left-container {
+  width: 1088px;
+  height: 773px;
+  background-color: #f5f8fc;
+}
+
+.right-container {
+  width: 512px;
+  height: 773px;
+  background-color: #fffbf8;
+}
+#new-collection {
+  display: flex;
+  align-items: center;
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+#new-collection-text h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+#new-collection-wrap {
+  width: 100%;
+  height: 160px;
+  background-color: #fe7865;
+  color: white;
+  position: relative;
+}
+
+#new-collection-wrap div {
+  position: absolute;
+  top: 74px;
+  left: 72px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#new-collection-wrap div img {
+  position: absolute;
+  left: 330px;
+}
+
+/* New Collection */
+.collection_wrap {
+  height: 773px;
+  display: flex;
+  position: relative;
+}
+.collection_wrap .right_container {
+  width: 1088px;
+  background-color: rgb(177, 192, 240);
+}
+.collection_wrap .left_container {
+  width: 512px;
+  background-color: rgb(255, 250, 189);
+  position: relative;
+}
+
+.collection_wrap .left_container .shop_now-box {
+  width: 100%;
+  height: 160px;
+  background-color: #fe7865;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 72px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 8px;
+}
+.collection_wrap .left_container .shop_now-box .shop-now {
+  text-transform: uppercase;
+  color: white;
+}
+.collection_wrap .left_container .shop_now-box .shop-btn {
+  background-image: url("./assets/arrow-right.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+}
+
+#new-collection .main-text-group {
+  position: absolute;
+  top: 199px;
+  left: 674px;
+  z-index: 1;
+  color: #2c2e3f;
+}
+
+#new-collection .main-text-group h3 {
+  font-size: 32px;
+}
+
+#new-collection .main-text-group h1 {
+  font-size: 96px;
+  letter-spacing: -0.1rem;
+}
+
+#new-collection .main-text-group h5 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+/* On Sale */
+.onsale_wrap {
+}
+
+.onsale_wrap .onsale_contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.onsale_wrap .onsale_contents .onsale_sidebar {
+  width: 376px;
+}
+
+.onsale_wrap .onsale_contents .onsale_sidebar .onsale_header h2 {
+  font-size: 72px;
+  line-height: 90px;
+  border-bottom: 4px solid #fe7865;
+  /* inline-block으로 해주면 text까지만 선이 생김 */
+  display: inline-block;
+  padding-bottom: 40px;
+  margin-bottom: 36px;
+}
+.onsale_wrap .onsale_contents .onsale_sidebar .onsale_header p {
+  margin-bottom: 140px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.onsale_wrap .onsale_contents .onsale_sidebar .onsale_menu {
+}
+
+.onsale_wrap .onsale_contents .onsale_sidebar .onsale_menu > li {
+  padding-bottom: 39px;
+}
+.onsale_wrap
+  .onsale_contents
+  .onsale_sidebar
+  .onsale_menu
+  > li
+  .onsale_submenu {
+  padding: 14px 0 0 24px;
+}
+
+.onsale_wrap
+  .onsale_contents
+  .onsale_sidebar
+  .onsale_menu
+  > li
+  .onsale_submenu
+  > li {
+  line-height: 40px;
+  font-weight: 200;
+}
+
+.onsale_wrap .onsale_contents .onsale_content_boxWrap {
+  background-color: antiquewhite;
+  display: grid;
+  width: 1088px;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.onsale_wrap .onsale_contents .onsale_content_boxWrap > div {
+  width: 549px;
+}
+
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .content_box {
+  display: flex;
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .content_box h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box1 {
+  justify-content: flex-end;
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box1 div {
+  background-color: #badac4;
+  width: 376px;
+  height: 508px;
+  position: relative;
+}
+
+.onsale_wrap
+  .onsale_contents
+  .onsale_content_boxWrap
+  .onsale_content_box1
+  div
+  h2 {
+  width: 240px;
+  height: 70px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  line-height: 70px;
+}
+
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box2 {
+  align-items: flex-end;
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box2 div {
+  position: relative;
+  width: 376px;
+  height: 376px;
+  background-color: #dbedf0;
+}
+.onsale_wrap
+  .onsale_contents
+  .onsale_content_boxWrap
+  .onsale_content_box2
+  div
+  h2 {
+  width: 240px;
+  height: 70px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 70px;
+}
+
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box3 {
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box4 {
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box5 {
+}
+.onsale_wrap .onsale_contents .onsale_content_boxWrap .onsale_content_box6 {
+}
